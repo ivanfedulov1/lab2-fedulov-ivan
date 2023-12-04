@@ -3,54 +3,56 @@ html{
     font-family: 'Roboto', sans-serif;
 
     background-image: url(https://sun9-64.userapi.com/impg/1s7N5tLg-EhjQOlkamyTRna0vrdaeyI448Ii4g/n9ysUxNeTgA.jpg?size=1917x1080&quality=96&sign=197ee8acaf6ca18d9de35ff9e9177d89&type=album);
-    background-repeat: no-repeat;
-    background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-  
-
-       
-
-
     }
+
     body {
-    width: 600px;
+    width: 40%;
     margin: 0 auto;
-    background: color #212; ;
-    padding: 0 30px 30px 30px;
-    border: 5px solid black;
+    padding: 0 30px;
+    
     }
     
  
-    
-    textarea {
-        resize: none;
-       }
-    
+
+
 textarea {
        background: #d5cc9a; 
-       border: 2px solid #a9c358; 
+       border: 3px solid #000000; 
        padding: 10px; 
        width: 100%; 
        height: 200px; 
-       box-sizing: border-box; 
        font-size: 14px;
-
+       resize: none;
     }
-    li:last-child {
-    margin-right: 0;
-    }
+   
     
     header {
     background-color: rgb(0, 0, 0);
     color: rgb(250, 250, 250);
-    padding: 30px 0;
+    padding: 20px;
     }
     
    
     
-    
-    
+.fieldset-option {
+    margin: 20px;
+}
+
+.fieldset-radio {
+    margin: 20px;
+}
+.call {
+    margin: 30px;
+    border-top: 2px solid;
+}
+.obratnaya-text {
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+.otkuda {
+    font-weight: bold;
+}
