@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -16,80 +16,82 @@
    
   </head>
   <body>
+
     <header>
-      <h1>Polytech</h1> <div>
-        
+      <h1>Polytech</h1> 
         <img src="https://sun9-49.userapi.com/impg/OS8Jf8n2ED4u677p4rQtWgBHpfSlkA1_J45Nuw/xeDuaovDhxs.jpg?size=491x313&quality=96&sign=7b3afb1ee14cd37ad5640a173b754eb1&type=album" alt="Image" height="50" width="70">
-        </div>
-      
     </header>
-    <br>
+
+    <form action="https://httpbin.org/post" method="post"  enctype="multipart/form-data" >
+
+      <div>
+        <label for="username">Имя:</label> 
+        <input type="text" id="username" name="username" required> <!-- required - обязательно к заполнению-->
+      </div>
     
-    <form id="feedbackForm">
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required>
-        <br> <br>
-        <label for="name">Фамилия:</label>
-        <input type="text" id="name" name="fam" required>
-        <br> <br>
-        <label for="name">Отчество:</label>
-        <input type="text" id="name" name="otch" required>
-        <br> <br>
-        <label for="email">Email:</label>
+      <div>
+        <label for="surname">Фамилия:</label> 
+        <input type="text" id="surname" name="surname" required>
+      </div>
+    
+      <div>
+        <label for="otch">Отчество:</label> 
+        <input type="text" id="otch" name="otch" required>
+      </div>
+      
+      <div>
+        <label for="email">Email</label> 
         <input type="email" id="email" name="email" required>
-        <button type="submit">Отправить</button> <br> <br> 
-
-        <label>Даете согласние на обработку персональных данных?</label><br>
-    <input type="checkbox"><label>Нет</label><br>
-    <input type="checkbox" ><label>Да</label><br>
-    <button>Отправить</button>
-    <br>
-
-
-<br>
-        <fieldset>
-        <em> Откуда вы узнали о нас? ;) </em>
-        <p><label> В интернете<input type="radio" name="time" value"yes"></label></p>
-        
-        <p><label> От друзей/коллег<input type="radio" name="time" value"yes"></label></p> 
-        
-        <p><label> Реклама на улице <input type="radio" name="time" value"yes"></label></p>
-        
-        <p><label> Другое<input type="radio" name="time" value"yes"></label></p>
-        <p><input type="submit" value="Выбрать"></p>
-    </fieldset>
-    <br>
-
-
-
-
-        <fieldset>
-            <div>Обратная связь</div>
-            <div >Тип обращения</div>
-            <select required="required">
-            <option value="">Выберите вариант</option>
-            <option>Жалоба</option>
-            <option>Предложение</option>
-            </select><br>
-            <p><input type="submit"></p>
-            </fieldset>
-            
-<p><b>Можете написать нам!</b></p>
-  <p><textarea name="comment"></textarea></p>
- 
-
-
-  
-<label><input type="file" value="Выберите файл"><label>
-
-    <p><input type="submit"></p>
-
+      </div>
     
-    <form method="POST" action="https://httpbin.org/post">
+      <label>Даете согласие на обработку персональных данных?</label>
+      <div><input type="checkbox" required><label>Да</label></div>
     
-      </form>
+      <div class="fieldset-radio">
+        <fieldset>
+          <div class="otkuda">Откуда вы узнали о нас?</div>
+    
+          <input type="radio" id="internet" name="source" value="internet" required>
+          <label for="internet">В интернете</label> <br>
+          
+          <input type="radio" id="friends" name="source" value="friends" required>
+          <label for="friends">От друзей</label><br>
+          
+          <input type="radio" id="random" name="source" value="random" required>
+          <label for="random">Наткнулся случайно...</label>
+        </fieldset>
+      </div>
+    
+      <div class="fieldset-option">
+        <fieldset>
+          <div class="obratnaya-text">Обратная связь</div>
+          <div>Тип обращения</div>
+
+          <select name="select" required> 
+            <option value="">Выберите вариант</option> <!-- value - добавляет значение-->
+            <option value="report">Жалоба</option>
+            <option value="predlozhenie">Предложение</option>
+          </select>
+          
+        </fieldset>
+      </div>
+    
+      <b>Можете написать нам!</b>
+      <textarea name="comment" required></textarea>
+    
+      <label><input type="file" name="file"></label>
+    
+      <input type="submit" value="Отправить">
+    
+    </form>
+    
     <footer>
 
+     <div class="call">
+     <small>Горячая линия +7 (922) 915-79-00 </small>
+     </div>
+
     </footer>
+
   </body>
 </html>
